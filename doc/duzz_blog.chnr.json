@@ -1,0 +1,3278 @@
+{
+  "name": "duzz_blog",
+  "describe": "杜兹博客",
+  "avatar": "",
+  "version": "3.5.7",
+  "createdTime": "2022-1-23 18:34:52",
+  "updatedTime": "2022-1-23 19:44:51",
+  "profile": {
+    "default": {
+      "db": "10C24D97-3B6A-41E6-B41B-9809E7553331",
+      "dbConn": "5F956E48-6EAD-436A-A5C8-E79E16F933FA",
+      "entityInitFields": [
+        {
+          "defKey": "TENANT_ID",
+          "defName": "租户号",
+          "comment": "",
+          "type": "",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "refDict": "",
+          "uiHint": "",
+          "id": "D9455FAE-DF24-423F-90FF-D0952D43AC68"
+        },
+        {
+          "defKey": "REVISION",
+          "defName": "乐观锁",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "301C3597-DA2E-405D-A749-84B434B34004"
+        },
+        {
+          "defKey": "CREATED_BY",
+          "defName": "创建人",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "6731AC7E-B25B-4A91-BF02-8D54D7A7D9CF"
+        },
+        {
+          "defKey": "CREATED_TIME",
+          "defName": "创建时间",
+          "comment": "",
+          "domain": "36C0666C-2DD4-4C12-9A2F-A69F396B6A62",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "234FF7C6-073D-45D4-9144-2CF2F459D0F4"
+        },
+        {
+          "defKey": "UPDATED_BY",
+          "defName": "更新人",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "",
+          "len": 32,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "B9C56687-82CD-4F39-B500-9B439EF5C81C"
+        },
+        {
+          "defKey": "UPDATED_TIME",
+          "defName": "更新时间",
+          "comment": "",
+          "domain": "36C0666C-2DD4-4C12-9A2F-A69F396B6A62",
+          "type": "",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": true,
+          "refDict": "",
+          "uiHint": "",
+          "id": "48B4A641-4405-41C6-AF88-6ABF32250A2A"
+        }
+      ],
+      "entityInitProperties": {}
+    },
+    "sql": {
+      "delimiter": ""
+    },
+    "dataTypeSupports": [
+      {
+        "defKey": "MYSQL",
+        "id": "10C24D97-3B6A-41E6-B41B-9809E7553331"
+      },
+      {
+        "defKey": "ORACLE",
+        "id": "7B6BBE47-CA8C-4B4B-89C4-D95A812BD86A"
+      },
+      {
+        "defKey": "SQLServer",
+        "id": "FA2C7545-3D51-40E1-BBE6-C7A64C765673"
+      },
+      {
+        "defKey": "PostgreSQL",
+        "id": "656CEE9B-B2B1-4D90-9555-536D1D29DF8C"
+      },
+      {
+        "defKey": "DB2",
+        "id": "3B210F44-50C7-4495-B8BA-40CA31EA5465"
+      },
+      {
+        "defKey": "DM",
+        "id": "A5F92EBA-B2BB-4877-B72B-82FC338AE3F9"
+      },
+      {
+        "defKey": "GaussDB",
+        "id": "751E497D-37B6-4BC0-903E-89B3343F3F48"
+      },
+      {
+        "defKey": "Kingbase",
+        "id": "574E5666-FEA7-4EC2-84F1-9BA5C141EE0A"
+      },
+      {
+        "defKey": "MaxCompute",
+        "id": "875DD1EF-13CE-47B8-9802-39AEFB6F267E"
+      },
+      {
+        "defKey": "JAVA",
+        "id": "E7F91159-A06C-424C-88F0-7217DD68F42B"
+      },
+      {
+        "defKey": "C#",
+        "id": "F1B6E9B1-47F3-4C84-9DAF-CFDA46194726"
+      },
+      {
+        "defKey": "SQLite",
+        "id": "614A8FF7-0186-4562-8530-98C3D36D62BA"
+      }
+    ],
+    "codeTemplates": [
+      {
+        "type": "dbDDL",
+        "applyFor": "10C24D97-3B6A-41E6-B41B-9809E7553331",
+        "isDefault": true,
+        "createTable": "DROP TABLE IF EXISTS {{=it.entity.defKey}};\nCREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{?}} {{= field.notNull ? 'NOT NULL' : '' }} {{= field.autoIncrement ? 'AUTO_INCREMENT' : '' }} {{= field.defaultValue ? it.func.join('DEFAULT',field.defaultValue,' ') : '' }} COMMENT '{{=it.func.join(field.defName,field.comment,';')}}' {{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n)  COMMENT = '{{=it.func.join(it.entity.defName,it.entity.comment,';') }}';\n$blankline\n",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "7B6BBE47-CA8C-4B4B-89C4-D95A812BD86A",
+        "isDefault": true,
+        "createTable": "CREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{?}}{{= field.defaultValue ? it.func.join(' DEFAULT ',field.defaultValue,' ') : '' }}{{= field.notNull ? ' NOT NULL' : '' }}{{= field.autoIncrement ? '' : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n);\n$blankline\n{{? it.entity.defKey || it.entity.defName}}COMMENT ON TABLE {{=it.entity.defKey}} IS '{{=it.func.join(it.entity.defName,it.entity.comment,';')}}';{{?}}\n{{~it.entity.fields:field:index}}\n{{? field.defName || field.comment}}COMMENT ON COLUMN {{=it.entity.defKey}}.{{=field.defKey}} IS '{{=it.func.join(field.defName,field.comment,';')}}';{{?}}\n{{~}}",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "FA2C7545-3D51-40E1-BBE6-C7A64C765673",
+        "isDefault": true,
+        "createTable": "IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[{{=it.entity.defKey}}]') AND type in (N'U'))\nDROP TABLE [dbo].[{{=it.entity.defKey}}];\n\nCREATE TABLE [dbo].[{{=it.entity.defKey}}](\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{?}}{{= field.notNull ? ' NOT NULL' : '' }}{{= field.autoIncrement ? ' IDENTITY(1,1)' : '' }}{{= field.defaultValue ? it.func.join(' DEFAULT ',field.defaultValue,' ') : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n){{=it.separator}}\n$blankline\n{{? it.entity.defKey || it.entity.defName}}EXEC sp_addextendedproperty 'MS_Description', '{{=it.func.join(it.entity.defName,it.entity.comment,';')}}', 'SCHEMA', dbo, 'table', {{=it.entity.defKey}}, null, null;{{?}}\n{{~it.entity.fields:field:index}}\nEXEC sp_addextendedproperty 'MS_Description', '{{=it.func.join(field.defName,field.comment,';')}}', 'SCHEMA', dbo, 'table', {{=it.entity.defKey}}, 'column', {{=field.defKey}};\n{{~}}\n",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "656CEE9B-B2B1-4D90-9555-536D1D29DF8C",
+        "isDefault": true,
+        "createTable": "DROP TABLE IF EXISTS {{=it.entity.defKey}};\nCREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{?}}{{= field.notNull ? ' NOT NULL' : '' }}{{= field.autoIncrement ? ' AUTO_INCREMENT' : '' }}{{= field.defaultValue ? it.func.join(' DEFAULT ',field.defaultValue,' ') : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n);\n$blankline\n{{? it.entity.defKey || it.entity.defName}}COMMENT ON TABLE {{=it.entity.defKey}} IS '{{=it.func.join(it.entity.defName,it.entity.comment,';')}}';{{?}}\n{{~it.entity.fields:field:index}}\n{{? field.defName || field.comment}}COMMENT ON COLUMN {{=it.entity.defKey}}.{{=field.defKey}} IS '{{=it.func.join(field.defName,field.comment,';')}}';{{?}}\n{{~}}",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "type": "appCode",
+        "applyFor": "E7F91159-A06C-424C-88F0-7217DD68F42B",
+        "isDefault": true,
+        "content": "package cn.com.chiner.entity;\n$blankline\nimport javax.persistence.*;\nimport java.io.Serializable;\nimport java.util.Date;\n$blankline\n{{\n    var today=new Date();\n    var fullYear=today.getFullYear();\n    var month=today.getMonth() + 1;\n    var days=today.getDate();\n}}\n /**\n * @author : http://www.chiner.pro\n * @date : {{=fullYear}}-{{=month}}-{{=days}}\n * @desc : {{=it.func.join(it.entity.defName,it.entity.comment,'-')}}\n */\n@Table(name=\"{{=it.entity.defKey}}\")\npublic class {{=it.func.camel(it.entity.defKey,true) }} implements Serializable,Cloneable{\n{{~it.entity.fields:field:index}}\n    /** {{=it.func.join(field.defName,field.comment,';')}} */\n    {{? field.primaryKey }}\n    @Id\n    @GeneratedValue\n    {{?}}\n    private {{=field.type}} {{=it.func.camel(field.defKey,false)}} ;\n{{~}}\n$blankline\n\n{{~it.entity.fields:field:index}}\n    /** {{=it.func.join(field.defName,field.comment,';')}} */\n    public {{=field.type}} get{{=it.func.camel(field.defKey,true)}}(){\n        return this.{{=it.func.camel(field.defKey,false)}};\n    }\n    /** {{=it.func.join(field.defName,field.comment,';')}} */\n    public void set{{=it.func.camel(field.defKey,true)}}({{=field.type}} {{= it.func.camel(field.defKey,false) }}){\n        this.{{=it.func.camel(field.defKey,false)}}={{=it.func.camel(field.defKey,false)}};\n    }\n{{~}}\n}"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "3B210F44-50C7-4495-B8BA-40CA31EA5465",
+        "isDefault": true,
+        "createTable": "CREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{?}}{{= field.notNull ? ' NOT NULL' : '' }}{{= field.autoIncrement ? '' : '' }}{{= field.defaultValue ? it.func.join(' DEFAULT ',field.defaultValue,' ') : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n);\n$blankline\n{{? it.entity.defKey || it.entity.defName}}COMMENT ON TABLE {{=it.entity.defKey}} IS '{{=it.func.join(it.entity.defName,it.entity.comment,';')}}';{{?}}\n{{~it.entity.fields:field:index}}\n{{? field.defName || field.comment}}COMMENT ON COLUMN {{=it.entity.defKey}}.{{=field.defKey}} IS '{{=it.func.join(field.defName,field.comment,';')}}';{{?}}\n{{~}}",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "A5F92EBA-B2BB-4877-B72B-82FC338AE3F9",
+        "isDefault": true,
+        "createTable": "CREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{?}}{{= field.notNull ? ' NOT NULL' : '' }}{{= field.autoIncrement ? '' : '' }}{{= field.defaultValue ? it.func.join(' DEFAULT ','('+field.defaultValue+')',' ') : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n);\n$blankline\n{{? it.entity.defKey || it.entity.defName}}COMMENT ON TABLE {{=it.entity.defKey}} IS '{{=it.func.join(it.entity.defName,it.entity.comment,';')}}';{{?}}\n{{~it.entity.fields:field:index}}\n{{? field.defName || field.comment}}COMMENT ON COLUMN {{=it.entity.defKey}}.{{=field.defKey}} IS '{{=it.func.join(field.defName,field.comment,';')}}';{{?}}\n{{~}}",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "type": "appCode",
+        "applyFor": "F1B6E9B1-47F3-4C84-9DAF-CFDA46194726",
+        "isDefault": true,
+        "content": "using System;\nusing System.Collections.Generic;\n\n$blankline\n{{\n    var today=new Date();\n    var fullYear=today.getFullYear();\n    var month=today.getMonth() + 1;\n    var days=today.getDate();\n}}\n/*\n * @author : http://www.chiner.com.cn\n * @date : {{=fullYear}}-{{=month}}-{{=days}}\n * @desc : {{=it.func.join(it.entity.defName,it.entity.comment,'-')}}\n */\nnamespace Chiner.Application\n{\n    public partial class {{=it.func.camel(it.entity.defKey,true) }}\n    {\n    \n        {{~it.entity.fields:field:index}}\n        /// <summary>\n        /// {{=it.func.join(field.defName,field.comment,';')}}\n        /// </summary>\n        public {{=field.type}} {{=it.func.camel(field.defKey,true)}} { get; set; }\n        $blankline\n        {{~}}\n        \n    }\n}"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "751E497D-37B6-4BC0-903E-89B3343F3F48",
+        "isDefault": true,
+        "createTable": "DROP TABLE IF EXISTS {{=it.entity.defKey}};\nCREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{?}}{{= field.notNull ? ' NOT NULL' : '' }}{{= field.autoIncrement ? ' AUTO_INCREMENT' : '' }}{{= field.defaultValue ? it.func.join(' DEFAULT ',field.defaultValue,' ') : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n);\n$blankline\n{{? it.entity.defKey || it.entity.defName}}COMMENT ON TABLE {{=it.entity.defKey}} IS '{{=it.func.join(it.entity.defName,it.entity.comment,';')}}';{{?}}\n{{~it.entity.fields:field:index}}\n{{? field.defName || field.comment}}COMMENT ON COLUMN {{=it.entity.defKey}}.{{=field.defKey}} IS '{{=it.func.join(field.defName,field.comment,';')}}';{{?}}\n{{~}}",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "574E5666-FEA7-4EC2-84F1-9BA5C141EE0A",
+        "isDefault": true,
+        "createTable": "DROP TABLE IF EXISTS {{=it.entity.defKey}};\nCREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{= field.defaultValue ? it.func.join(' DEFAULT ',field.defaultValue,' ') : '' }}{{?}}{{= field.notNull ? ' NOT NULL' : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n);\n$blankline\n{{? it.entity.defKey || it.entity.defName}}COMMENT ON TABLE {{=it.entity.defKey}} IS '{{=it.func.join(it.entity.defName,it.entity.comment,';')}}';{{?}}\n{{~it.entity.fields:field:index}}\n{{? field.defName || field.comment}}COMMENT ON COLUMN {{=it.entity.defKey}}.{{=field.defKey}} IS '{{=it.func.join(field.defName,field.comment,';')}}';{{?}}\n{{~}}",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "dictSQLTemplate",
+        "isDefault": true,
+        "content": "/* 插入字典总表[{{=it.dict.defKey}}-{{=it.dict.defName}}] */\nINSERT INTO SYS_DICT(KEY_,LABEL,INTRO,REVISION) VALUES('{{=it.dict.defKey}}','{{=it.dict.defName}}','{{=it.dict.intro}}',1);\n/* 插入字典明细表 */\n{{~it.dict.items:item:index}}\nINSERT INTO SYS_DICT_ITEM(DICT_KEY,KEY_,LABEL,SORT_,INTRO,REVISION) VALUES('{{=it.dict.defKey}}','{{=item.defKey}}','{{=item.defName}}','{{=item.sort}}','{{=item.intro}}',1);\n{{~}}"
+      },
+      {
+        "type": "dbDDL",
+        "applyFor": "875DD1EF-13CE-47B8-9802-39AEFB6F267E",
+        "isDefault": true,
+        "createTable": "DROP TABLE IF EXISTS {{=it.entity.defKey}};\nCREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}} {{= field.notNull ? 'NOT NULL' : '' }} {{= field.autoIncrement ? 'AUTO_INCREMENT' : '' }} {{= field.defaultValue ? it.func.join('DEFAULT',field.defaultValue,' ') : '' }} COMMENT '{{=it.func.join(field.defName,field.comment,';')}}' {{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n)  COMMENT = '{{=it.func.join(it.entity.defName,it.entity.comment,';') }}';\n$blankline\n",
+        "createIndex": "",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      },
+      {
+        "applyFor": "614A8FF7-0186-4562-8530-98C3D36D62BA",
+        "type": "dbDDL",
+        "createTable": "DROP TABLE IF EXISTS {{=it.entity.defKey}};\nCREATE TABLE {{=it.entity.defKey}}(\n{{ pkList = [] ; }}\n{{~it.entity.fields:field:index}}\n    {{? field.primaryKey }}{{ pkList.push(field.defKey) }}{{?}}\n    {{=field.defKey}} {{=field.type}}{{?field.len>0}}{{='('}}{{=field.len}}{{?field.scale>0}}{{=','}}{{=field.scale}}{{?}}{{=')'}}{{?}} {{= field.notNull ? 'NOT NULL' : '' }} {{= field.autoIncrement ? 'AUTOINCREMENT' : '' }} {{= field.defaultValue ? it.func.join('DEFAULT',field.defaultValue,' ') : '' }}{{= index < it.entity.fields.length-1 ? ',' : ( pkList.length>0 ? ',' :'' ) }} --{{=it.func.join(field.defName,field.comment,';')}}\n{{~}}\n{{? pkList.length >0 }}\n    PRIMARY KEY ({{~pkList:pkName:i}}{{= pkName }}{{= i<pkList.length-1 ? ',' : '' }}{{~}})\n{{?}}\n)  ; --{{=it.func.join(it.entity.defName,it.entity.comment,';') }}\n$blankline\n",
+        "createIndex": "{{~ it.entity.indexes:index}}\nCREATE {{? index.unique}}UNIQUE {{?}}INDEX {{=index.defKey}} ON {{=it.entity.defKey}}({{ fieldsKeys = index.fields.map(function(field){return field.fieldDefKey}) ; }}{{=it.func.join(...fieldsKeys,',')}});\n{{~}}",
+        "createView": "CREATE VIEW {{=it.view.defKey}} AS\nSELECT \n{{~it.view.fields:field:index}}\n    {{=field.refEntity}}.{{=field.refEntityField}} AS {{=field.defKey}}{{= index < it.view.fields.length-1 ? ',' : ''}}\n{{~}}\nFROM {{~it.view.refEntities:refEntity:index}}{{=refEntity}}{{= index < it.view.refEntities.length-1 ? ',' : ''}}{{~}};\n$blankline\n"
+      }
+    ],
+    "generatorDoc": {
+      "docTemplate": ""
+    },
+    "relationFieldSize": "15",
+    "uiHint": [
+      {
+        "defKey": "Input",
+        "defName": "普通输入框",
+        "id": "BDCB9133-CE00-436C-BC6C-F08B408A3190"
+      },
+      {
+        "defKey": "Select",
+        "defName": "下拉输入框",
+        "id": "3956DB3B-4855-4B07-B575-C11AD2774560"
+      },
+      {
+        "defKey": "CheckBox",
+        "defName": "复选框",
+        "id": "1096DCD5-D158-47CF-9E0A-C5C415B79DE6"
+      },
+      {
+        "defKey": "RadioBox",
+        "defName": "单选框",
+        "id": "0CF25A22-316F-4FDE-9785-886962B7FFD3"
+      },
+      {
+        "defKey": "Double",
+        "defName": "小数输入",
+        "id": "EDBB46E6-FF4D-44A0-B117-21CEE6723926"
+      },
+      {
+        "defKey": "Integer",
+        "defName": "整数输入",
+        "id": "A3326976-729B-4818-9582-DA1C4542ABF5"
+      },
+      {
+        "defKey": "Money",
+        "defName": "金额输入",
+        "id": "41A9A155-C2F2-4B55-985E-83F7EEE432B1"
+      },
+      {
+        "defKey": "Date",
+        "defName": "日期输入",
+        "id": "17B97594-8F61-4400-9194-9838677ADC4D"
+      },
+      {
+        "defKey": "DataYearMonth",
+        "defName": "年月输入",
+        "id": "30623A35-C88F-4708-BE9B-E086B2B03EDC"
+      },
+      {
+        "defKey": "Text",
+        "defName": "长文本输入",
+        "id": "077F0A4D-61BA-456C-B5E0-8A69656414F7"
+      },
+      {
+        "defKey": "RichText",
+        "defName": "富文本输入",
+        "id": "BCC46194-EAF2-4E08-B69C-9326342EF6F3"
+      }
+    ]
+  },
+  "entities": [
+    {
+      "id": "6DAFB61B-ABF3-443F-9F71-70B7E5827AC6",
+      "defKey": "article_content",
+      "defName": "文章内容表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "id",
+          "defName": "文章ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "26931166-1173-4A2C-93CF-1017B76D40AE"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "content",
+          "defName": "文章内容",
+          "comment": "",
+          "domain": "",
+          "type": "MEDIUMTEXT",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "MEDIUMTEXT",
+          "primaryKeyName": "",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "520F5020-6FC6-44C7-9374-7B8F8AF365D7"
+        }
+      ],
+      "indexes": [
+        {
+          "defKey": "PRIMARY",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "9A9F314D-FCC0-4318-8796-B39D19D75DE3",
+              "fieldDefKey": "26931166-1173-4A2C-93CF-1017B76D40AE"
+            }
+          ],
+          "id": "5C610877-1F14-41BA-919B-B21FD1ACAD85"
+        }
+      ],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": [
+        {
+          "myField": "26931166-1173-4A2C-93CF-1017B76D40AE",
+          "refEntity": "78B2E81E-A726-4916-BA7C-4052543032AA",
+          "refField": "696E3C7E-22C1-43F0-9A04-C3ECC22BF10F",
+          "myRows": "1",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ]
+    },
+    {
+      "id": "78B2E81E-A726-4916-BA7C-4052543032AA",
+      "defKey": "article_info",
+      "defName": "文章信息表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "id",
+          "defName": "文章ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT UNSIGNED",
+          "len": 11,
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT UNSIGNED(11)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "√",
+          "refDict": "",
+          "id": "696E3C7E-22C1-43F0-9A04-C3ECC22BF10F"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "user_id",
+          "defName": "作者ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "DAEDDBFA-90D6-4BA8-B459-8FB944B6B0A3"
+        },
+        {
+          "rowNo": 3,
+          "defKey": "category_id",
+          "defName": "分类ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "2A9E224C-0623-4795-9256-6877C7623FE3"
+        },
+        {
+          "rowNo": 4,
+          "defKey": "title",
+          "defName": "文章标题",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 64,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(64)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "4C5C8625-621F-45A2-BC79-393E9FEB8108"
+        },
+        {
+          "rowNo": 5,
+          "defKey": "summary",
+          "defName": "文章简述",
+          "comment": "",
+          "domain": "2AB73322-B30B-4FB7-9482-E9F920073300",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(255)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "C42ACDE7-D582-4FAE-A445-BEF1B0F82C90"
+        },
+        {
+          "rowNo": 6,
+          "defKey": "thumbnail",
+          "defName": "文章缩略图",
+          "comment": "",
+          "domain": "2AB73322-B30B-4FB7-9482-E9F920073300",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(255)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "EDE370D6-3FD4-44DD-A8D3-5C03F7D5A7DC"
+        },
+        {
+          "rowNo": 7,
+          "defKey": "view_count",
+          "defName": "浏览数",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "52B15C15-EBB3-479C-82BA-E6FCD2A76C45"
+        },
+        {
+          "rowNo": 8,
+          "defKey": "comment_count",
+          "defName": "评论数",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "CE4F169B-A39D-45BF-9A39-E017DEA7B6B8"
+        },
+        {
+          "rowNo": 9,
+          "defKey": "like_count",
+          "defName": "点赞数",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "C89F8769-A10D-45CE-8891-6A24121BAB19"
+        },
+        {
+          "rowNo": 10,
+          "defKey": "status",
+          "defName": "文章状态",
+          "comment": "",
+          "domain": "",
+          "type": "TINYINT",
+          "len": 4,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "1",
+          "hideInGraph": false,
+          "typeFullName": "TINYINT(4)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "1BC98257-90B6-4629-8356-D6E8D37742D3"
+        },
+        {
+          "rowNo": 11,
+          "defKey": "create_time",
+          "defName": "创建时间",
+          "comment": "",
+          "domain": "36C0666C-2DD4-4C12-9A2F-A69F396B6A62",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "DATETIME",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "C94ACB04-43FA-4750-AEF2-02F830199EEE"
+        },
+        {
+          "rowNo": 12,
+          "defKey": "update_time",
+          "defName": "更新时间",
+          "comment": "",
+          "domain": "36C0666C-2DD4-4C12-9A2F-A69F396B6A62",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "DATETIME",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "E2BE362C-C90F-47E8-834D-D46A6BEDB468"
+        }
+      ],
+      "indexes": [
+        {
+          "defKey": "PRIMARY",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "00A21AF7-FA2B-4E63-932F-25C0CFA10FA2",
+              "fieldDefKey": "696E3C7E-22C1-43F0-9A04-C3ECC22BF10F"
+            }
+          ],
+          "id": "985A49EB-D7F6-453C-B9CC-E70E7EF786E9"
+        }
+      ],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": [
+        {
+          "myField": "DAEDDBFA-90D6-4BA8-B459-8FB944B6B0A3",
+          "refEntity": "5A76ECF5-7D10-4784-A17B-F61A602723D3",
+          "refField": "8DBD86CD-B381-4B99-B834-24B5CF1CDD64",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ]
+    },
+    {
+      "id": "D9BA8DAC-69CA-42A2-BD9C-E2B9459D7F30",
+      "defKey": "article_tag_ref",
+      "defName": "文章标签映射表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "article_id",
+          "defName": "文章ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "4ACD7BEB-E349-4BCD-970D-932CD30535D4"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "tag_id",
+          "defName": "标签ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "5891B45A-FE83-4F9A-9131-0F4688294B50"
+        }
+      ],
+      "indexes": [
+        {
+          "defKey": "PRIMARY",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "189A5331-D001-437A-9998-1E8393802ED6",
+              "fieldDefKey": "4ACD7BEB-E349-4BCD-970D-932CD30535D4"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "E08A2F1C-ED25-4F25-82E1-370812E933EB",
+              "fieldDefKey": "5891B45A-FE83-4F9A-9131-0F4688294B50"
+            }
+          ],
+          "id": "6DC6C890-13F2-4B30-8396-4E28954DE405"
+        }
+      ],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": [
+        {
+          "myField": "4ACD7BEB-E349-4BCD-970D-932CD30535D4",
+          "refEntity": "78B2E81E-A726-4916-BA7C-4052543032AA",
+          "refField": "696E3C7E-22C1-43F0-9A04-C3ECC22BF10F",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ]
+    },
+    {
+      "id": "0D4A3190-B38A-4780-A494-82C03D429033",
+      "defKey": "category",
+      "defName": "分类表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "id",
+          "defName": "分类ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT UNSIGNED",
+          "len": 11,
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT UNSIGNED(11)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "√",
+          "refDict": "",
+          "id": "668A2A39-9144-4779-A21F-C3030E8749A0"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "name",
+          "defName": "分类名称",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(32)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "36E9A61A-FBA1-40BC-96EC-5E402E081F22"
+        },
+        {
+          "rowNo": 3,
+          "defKey": "description",
+          "defName": "描述",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 64,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(64)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "93FC9624-C3E7-4D2E-91CE-F93566B3FFED"
+        }
+      ],
+      "indexes": [
+        {
+          "defKey": "category_name",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "00354094-A2C4-44AE-87C6-CA23359236D7",
+              "fieldDefKey": "36E9A61A-FBA1-40BC-96EC-5E402E081F22"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "C248DAC9-CD64-4FED-AD32-80B2BC280576"
+            }
+          ],
+          "id": "1DBB469E-A912-4B48-9D77-578624C44C57"
+        },
+        {
+          "defKey": "PRIMARY",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "BDD04873-6CD8-4FF6-B47A-66010E5EA6E3",
+              "fieldDefKey": "668A2A39-9144-4779-A21F-C3030E8749A0"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "4A99A327-6173-4C01-9291-CB844F9BAC3F"
+            }
+          ],
+          "id": "20D6A63C-A0A1-4C8C-A33D-37829FB69F87"
+        }
+      ],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": [
+        {
+          "myField": "668A2A39-9144-4779-A21F-C3030E8749A0",
+          "refEntity": "78B2E81E-A726-4916-BA7C-4052543032AA",
+          "refField": "2A9E224C-0623-4795-9256-6877C7623FE3",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ]
+    },
+    {
+      "id": "4AEA621C-9BB3-4D8D-B383-927EBF949690",
+      "defKey": "article_comment",
+      "defName": "文章评论表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "id",
+          "defName": "评论ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT UNSIGNED",
+          "len": 11,
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT UNSIGNED(11)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "√",
+          "refDict": "",
+          "id": "61AFBF75-EA07-47BA-B8BE-F59469AF488A"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "parent_id",
+          "defName": "上级评论ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT UNSIGNED",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "0",
+          "hideInGraph": false,
+          "typeFullName": "INT UNSIGNED(11)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "03D3C9F2-9E14-42CF-9E72-33BB8DA5AC67"
+        },
+        {
+          "rowNo": 3,
+          "defKey": "article_id",
+          "defName": "文章ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT UNSIGNED",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT UNSIGNED(11)",
+          "primaryKeyName": "",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "D9185AFE-9AEA-4EBB-B65C-B422EC50E5FD"
+        },
+        {
+          "rowNo": 4,
+          "defKey": "user_id",
+          "defName": "评论人ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "511885EB-E1B6-4A20-99F9-6105AF6F7D3F"
+        },
+        {
+          "rowNo": 5,
+          "defKey": "content",
+          "defName": "内容",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 1000,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(1000)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "FF84698B-CE5D-4272-B16C-D77A59DF6E05"
+        },
+        {
+          "rowNo": 6,
+          "defKey": "create_time",
+          "defName": "评论时间",
+          "comment": "",
+          "domain": "36C0666C-2DD4-4C12-9A2F-A69F396B6A62",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "DATETIME",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "64F85C0C-7B5E-4563-83C8-BA6EFF3A3CDE"
+        }
+      ],
+      "indexes": [
+        {
+          "defKey": "PRIMARY",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "8C8B8746-66F5-491D-AB36-304166810BCD",
+              "fieldDefKey": "61AFBF75-EA07-47BA-B8BE-F59469AF488A"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "22F63867-2335-4E77-AAFD-5FBBEE48A302"
+            }
+          ],
+          "id": "3DC1FFA3-0140-410B-80A5-DD420342E0AF"
+        }
+      ],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": [
+        {
+          "myField": "D9185AFE-9AEA-4EBB-B65C-B422EC50E5FD",
+          "refEntity": "78B2E81E-A726-4916-BA7C-4052543032AA",
+          "refField": "696E3C7E-22C1-43F0-9A04-C3ECC22BF10F",
+          "myRows": "n",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ]
+    },
+    {
+      "id": "D0F596BE-D5A4-4F74-8E22-5325A817529D",
+      "defKey": "log",
+      "defName": "日志表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "user_id",
+          "defName": "用户ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT",
+          "len": 11,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT(11)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "515FFA22-2F41-4408-8587-796FF05A9A6F"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "action",
+          "defName": "操作",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 64,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(64)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "F7122E9C-EA34-4F0C-BAF5-18F5D19DF5BB"
+        },
+        {
+          "rowNo": 3,
+          "defKey": "description",
+          "defName": "描述",
+          "comment": "",
+          "domain": "2AB73322-B30B-4FB7-9482-E9F920073300",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(255)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "B628D0B3-948A-4BBE-98C3-98903700BCA5"
+        },
+        {
+          "rowNo": 4,
+          "defKey": "create_time",
+          "defName": "日志写入时间",
+          "comment": "",
+          "domain": "36C0666C-2DD4-4C12-9A2F-A69F396B6A62",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "DATETIME",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "707CE8A0-7CAA-490A-A6D8-EC7E855B7911"
+        }
+      ],
+      "indexes": [],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": []
+    },
+    {
+      "id": "BD919186-7096-4A38-992C-3AD5102AE3A3",
+      "defKey": "options",
+      "defName": "配置表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "name",
+          "defName": "配置项名称",
+          "comment": null,
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(32)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "8740D959-F6FD-456D-892F-3AC5830C8ECA"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "value",
+          "defName": "配置值",
+          "comment": null,
+          "domain": "2AB73322-B30B-4FB7-9482-E9F920073300",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(255)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "B0BBBF19-2506-431C-A2A8-BCCD03082A32"
+        },
+        {
+          "rowNo": 3,
+          "defKey": "description",
+          "defName": "描述",
+          "comment": null,
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 64,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(64)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "3684FF32-5DD2-4F8D-B7B5-17845B74FD65"
+        }
+      ],
+      "indexes": [
+        {
+          "defKey": "PRIMARY",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "1258ABD1-A966-4F2A-871E-61D62DABE89B",
+              "fieldDefKey": "8740D959-F6FD-456D-892F-3AC5830C8ECA"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "4F481717-C1A0-485B-8F11-261E3D46ED70"
+            }
+          ],
+          "id": "08C9C35E-9866-45A8-8EA3-9BD06117633D"
+        }
+      ],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": []
+    },
+    {
+      "id": "E8296D19-2DB1-472D-8D88-CFD7C005A4BD",
+      "defKey": "tag",
+      "defName": "标签表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "id",
+          "defName": "标签ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT UNSIGNED",
+          "len": 11,
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT UNSIGNED(11)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "√",
+          "refDict": "",
+          "id": "22258DFA-1D7A-4DE6-9D88-53BE219CD6CB"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "name",
+          "defName": "标签名称",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(32)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "0BFD4253-9669-4080-B4AB-C70392E6FC36"
+        },
+        {
+          "rowNo": 3,
+          "defKey": "description",
+          "defName": "描述",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 64,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(64)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "AA5FAF33-A2BA-44D9-98CA-1A7B9581716D"
+        }
+      ],
+      "indexes": [
+        {
+          "defKey": "PRIMARY",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "0E3FC04B-BF4B-4B8A-833F-E52BDFE12526",
+              "fieldDefKey": "22258DFA-1D7A-4DE6-9D88-53BE219CD6CB"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "4249B9BA-06A8-4C2F-990D-28175EA7818B"
+            }
+          ],
+          "id": "65951076-6880-49BF-8D72-CE87A6AA0F4B"
+        },
+        {
+          "defKey": "tag_name",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "8F961764-8938-4BA4-8E91-9690429A3AC5",
+              "fieldDefKey": "0BFD4253-9669-4080-B4AB-C70392E6FC36"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "90F8A34E-6A91-46BF-BDFD-6D2115B86F13"
+            }
+          ],
+          "id": "CD0432B7-D318-49EB-AAF1-B4E22D0D0B26"
+        }
+      ],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": [
+        {
+          "myField": "22258DFA-1D7A-4DE6-9D88-53BE219CD6CB",
+          "refEntity": "D9BA8DAC-69CA-42A2-BD9C-E2B9459D7F30",
+          "refField": "5891B45A-FE83-4F9A-9131-0F4688294B50",
+          "myRows": "1",
+          "refRows": "1",
+          "innerType": ""
+        }
+      ]
+    },
+    {
+      "id": "5A76ECF5-7D10-4784-A17B-F61A602723D3",
+      "defKey": "user",
+      "defName": "用户表",
+      "comment": "",
+      "properties": {},
+      "fields": [
+        {
+          "rowNo": 1,
+          "defKey": "id",
+          "defName": "用户ID",
+          "comment": "",
+          "domain": "",
+          "type": "INT UNSIGNED",
+          "len": 11,
+          "scale": "",
+          "primaryKey": true,
+          "notNull": true,
+          "autoIncrement": true,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "INT UNSIGNED(11)",
+          "primaryKeyName": "√",
+          "notNullName": "√",
+          "autoIncrementName": "√",
+          "refDict": "",
+          "id": "8DBD86CD-B381-4B99-B834-24B5CF1CDD64"
+        },
+        {
+          "rowNo": 2,
+          "defKey": "name",
+          "defName": "用户名",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(32)",
+          "primaryKeyName": "",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "FA64B38D-FD2E-4DFB-A45E-F3D45D422FB4"
+        },
+        {
+          "rowNo": 3,
+          "defKey": "phone",
+          "defName": "手机号",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(32)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "3FA839B8-18B9-44AA-BEE0-5C5A67C00DB8"
+        },
+        {
+          "rowNo": 4,
+          "defKey": "email",
+          "defName": "邮箱",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 64,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(64)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "3BAE8D7A-24F4-4A93-837D-D28F68670863"
+        },
+        {
+          "rowNo": 5,
+          "defKey": "pass",
+          "defName": "密码",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(32)",
+          "primaryKeyName": "",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "08CB6B2C-EE83-4B4C-B991-E60B57DE17DC"
+        },
+        {
+          "rowNo": 6,
+          "defKey": "nickname",
+          "defName": "昵称",
+          "comment": "",
+          "domain": "D35CFF14-D1B2-4D89-9333-B1713F7B647A",
+          "type": "VARCHAR",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(32)",
+          "primaryKeyName": "",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "32DAAF6D-7C1C-471D-B4D7-DDAFE3FF4F3C"
+        },
+        {
+          "rowNo": 7,
+          "defKey": "avatar",
+          "defName": "头像",
+          "comment": "",
+          "domain": "",
+          "type": "VARCHAR",
+          "len": 64,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "VARCHAR(64)",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "DE8BEC09-2073-4891-8E21-7A57C2433826"
+        },
+        {
+          "rowNo": 8,
+          "defKey": "role",
+          "defName": "角色",
+          "comment": "",
+          "domain": "",
+          "type": "TINYINT",
+          "len": 4,
+          "scale": "",
+          "primaryKey": false,
+          "notNull": true,
+          "autoIncrement": false,
+          "defaultValue": "2",
+          "hideInGraph": false,
+          "typeFullName": "TINYINT(4)",
+          "primaryKeyName": "",
+          "notNullName": "√",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "17AA8B21-C93D-4E02-A162-73B5E6F56522"
+        },
+        {
+          "rowNo": 9,
+          "defKey": "register_time",
+          "defName": "注册时间",
+          "comment": "",
+          "domain": "36C0666C-2DD4-4C12-9A2F-A69F396B6A62",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "DATETIME",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "1C7DA19E-C031-4C72-929D-56B21FC3E9C3"
+        },
+        {
+          "rowNo": 10,
+          "defKey": "last_login_time",
+          "defName": "上次登录时间",
+          "comment": "",
+          "domain": "36C0666C-2DD4-4C12-9A2F-A69F396B6A62",
+          "type": "DATETIME",
+          "len": "",
+          "scale": "",
+          "primaryKey": false,
+          "notNull": false,
+          "autoIncrement": false,
+          "defaultValue": "",
+          "hideInGraph": false,
+          "typeFullName": "DATETIME",
+          "primaryKeyName": "",
+          "notNullName": "",
+          "autoIncrementName": "",
+          "refDict": "",
+          "id": "1023064F-1422-4DB7-AA87-E095059D53D0"
+        }
+      ],
+      "indexes": [
+        {
+          "defKey": "PRIMARY",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "D4A96EE8-E45B-49BB-8C1A-FE5D0C2B2DB4",
+              "fieldDefKey": "8DBD86CD-B381-4B99-B834-24B5CF1CDD64"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "0BFEFB20-C1DA-41E3-B2F5-84543F821523"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "69FB59D4-8CD8-49C8-81A8-9CECF05FD5B2"
+            },
+            {
+              "ascOrDesc": "A",
+              "id": "859C2EF3-8DDB-4B89-BBD7-D62C94D3E786"
+            }
+          ],
+          "id": "19277C41-DEC7-4AAA-97E4-6D0730868A35"
+        },
+        {
+          "defKey": "user_email",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "12787E7A-553A-4F88-B849-6B95627DB982"
+            }
+          ],
+          "id": "6ACE3C15-51BF-46BD-B33B-DD5C84E6E4F4"
+        },
+        {
+          "defKey": "user_name",
+          "unique": true,
+          "defName": null,
+          "comment": "",
+          "fields": [
+            {
+              "ascOrDesc": "A",
+              "id": "A5AE6312-BD29-4832-9824-62470572B611"
+            }
+          ],
+          "id": "D8D8C02B-0A7C-4EF1-B4C1-E0C2D1D5DEBF"
+        }
+      ],
+      "nameTemplate": "{defKey}[{defName}]",
+      "headers": [
+        {
+          "freeze": false,
+          "refKey": "hideInGraph",
+          "hideInGraph": true,
+          "code": "relationNoShow",
+          "value": "关系图",
+          "newCode": "hideInGraph",
+          "com": "Icon",
+          "relationNoShow": true
+        },
+        {
+          "freeze": true,
+          "refKey": "defKey",
+          "hideInGraph": false,
+          "code": "name",
+          "value": "字段代码",
+          "newCode": "defKey",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": true,
+          "refKey": "defName",
+          "hideInGraph": false,
+          "code": "chnname",
+          "value": "显示名称",
+          "newCode": "defName",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "primaryKey",
+          "hideInGraph": false,
+          "code": "pk",
+          "value": "主键",
+          "newCode": "primaryKey",
+          "com": "Checkbox",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "notNull",
+          "hideInGraph": true,
+          "code": "notNull",
+          "value": "不为空",
+          "newCode": "notNull",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "autoIncrement",
+          "hideInGraph": true,
+          "code": "autoIncrement",
+          "value": "自增",
+          "newCode": "autoIncrement",
+          "com": "Checkbox",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "domain",
+          "hideInGraph": true,
+          "code": "type",
+          "value": "数据域",
+          "newCode": "domain",
+          "com": "Select",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "type",
+          "hideInGraph": false,
+          "code": "dataType",
+          "value": "数据类型",
+          "newCode": "type",
+          "com": "Text",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "len",
+          "hideInGraph": true,
+          "code": "len",
+          "value": "长度",
+          "newCode": "len",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "scale",
+          "hideInGraph": false,
+          "code": "scale",
+          "value": "小数位数",
+          "newCode": "scale",
+          "com": "Input",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "comment",
+          "hideInGraph": true,
+          "code": "remark",
+          "value": "说明",
+          "newCode": "comment",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "refDict",
+          "hideInGraph": true,
+          "code": "refDict",
+          "value": "数据字典",
+          "newCode": "refDict",
+          "com": "SearchSelect",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "defaultValue",
+          "hideInGraph": true,
+          "code": "defaultValue",
+          "value": "默认值",
+          "newCode": "defaultValue",
+          "com": "Input",
+          "relationNoShow": true
+        },
+        {
+          "freeze": false,
+          "refKey": "isStandard",
+          "hideInGraph": false,
+          "code": "isStandard",
+          "value": "标准字段",
+          "newCode": "isStandard",
+          "com": "label",
+          "relationNoShow": false
+        },
+        {
+          "freeze": false,
+          "refKey": "uiHint",
+          "hideInGraph": true,
+          "code": "uiHint",
+          "value": "UI建议",
+          "newCode": "uiHint",
+          "com": "Select",
+          "relationNoShow": true
+        }
+      ],
+      "correlations": []
+    }
+  ],
+  "views": [],
+  "dicts": [],
+  "viewGroups": [],
+  "dataTypeMapping": {
+    "referURL": "",
+    "mappings": []
+  },
+  "domains": [],
+  "dbConn": [
+    {
+      "defKey": "5F956E48-6EAD-436A-A5C8-E79E16F933FA",
+      "defName": "root",
+      "type": "10C24D97-3B6A-41E6-B41B-9809E7553331",
+      "properties": {
+        "driver_class_name": "com.mysql.cj.jdbc.Driver",
+        "url": "jdbc:mysql://127.0.0.1:3306/duzz_blog?characterEncoding=UTF-8&useSSL=false&useUnicode=true&serverTimezone=UTC",
+        "password": "root",
+        "username": "root",
+        "customer_driver": ""
+      }
+    }
+  ],
+  "diagrams": [
+    {
+      "defKey": "业务表关系图",
+      "defName": "",
+      "relationType": "field",
+      "canvasData": {
+        "cells": [
+          {
+            "id": "71a091e1-65db-4d25-a349-ad067fc1811b",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "486e2573-aeb2-4935-9e32-6681016e8b7b",
+              "port": "8DBD86CD-B381-4B99-B834-24B5CF1CDD64%out"
+            },
+            "target": {
+              "cell": "7e669648-a205-44ba-b916-e10ca2d57ea5",
+              "port": "DAEDDBFA-90D6-4BA8-B459-8FB944B6B0A3%in"
+            },
+            "relation": "1:n",
+            "vertices": [],
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": "创作"
+                  },
+                  "rect": {}
+                }
+              }
+            ],
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "21925917-34e0-49b9-bb39-c5acd1044cf6",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "7e669648-a205-44ba-b916-e10ca2d57ea5",
+              "port": "696E3C7E-22C1-43F0-9A04-C3ECC22BF10F%in"
+            },
+            "target": {
+              "cell": "f8acd10e-aed7-463e-a4a2-aabb27cd3eb3",
+              "port": "26931166-1173-4A2C-93CF-1017B76D40AE%in"
+            },
+            "relation": "1:1",
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": ""
+                  },
+                  "rect": {}
+                }
+              }
+            ],
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "f8acd10e-aed7-463e-a4a2-aabb27cd3eb3",
+            "shape": "table",
+            "position": {
+              "x": 25,
+              "y": -70
+            },
+            "count": 0,
+            "originKey": "6DAFB61B-ABF3-443F-9F71-70B7E5827AC6"
+          },
+          {
+            "id": "454d67e3-c505-4107-ad24-95818820d94b",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "7e669648-a205-44ba-b916-e10ca2d57ea5",
+              "port": "696E3C7E-22C1-43F0-9A04-C3ECC22BF10F%out"
+            },
+            "target": {
+              "cell": "0db33872-2bfa-4610-8cba-253b74e5813e",
+              "port": "D9185AFE-9AEA-4EBB-B65C-B422EC50E5FD%in"
+            },
+            "relation": "1:n",
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": ""
+                  },
+                  "rect": {}
+                }
+              }
+            ],
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "cce85781-586d-443b-94eb-457b0ed4b87d",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "7e669648-a205-44ba-b916-e10ca2d57ea5",
+              "port": "696E3C7E-22C1-43F0-9A04-C3ECC22BF10F%out"
+            },
+            "target": {
+              "cell": "ad9efe77-66ae-47b8-a8b1-375cad7ff9f9",
+              "port": "4ACD7BEB-E349-4BCD-970D-932CD30535D4%in"
+            },
+            "relation": "1:n",
+            "vertices": [
+              {
+                "x": 430,
+                "y": 76
+              }
+            ],
+            "labels": [
+              {
+                "attrs": {
+                  "text": {
+                    "text": ""
+                  },
+                  "rect": {}
+                }
+              }
+            ],
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "0db33872-2bfa-4610-8cba-253b74e5813e",
+            "shape": "table",
+            "position": {
+              "x": 480,
+              "y": -10
+            },
+            "count": 0,
+            "originKey": "4AEA621C-9BB3-4D8D-B383-927EBF949690"
+          },
+          {
+            "id": "d11dd420-ee79-4155-b1a8-37f17db164cf",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "ad9efe77-66ae-47b8-a8b1-375cad7ff9f9",
+              "port": "5891B45A-FE83-4F9A-9131-0F4688294B50%in"
+            },
+            "target": {
+              "cell": "2f2b9044-c0cc-48c6-bc53-017c570113b9",
+              "port": "22258DFA-1D7A-4DE6-9D88-53BE219CD6CB%in"
+            },
+            "relation": "1:1",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "ad9efe77-66ae-47b8-a8b1-375cad7ff9f9",
+            "shape": "table",
+            "position": {
+              "x": 480,
+              "y": 190
+            },
+            "count": 0,
+            "originKey": "D9BA8DAC-69CA-42A2-BD9C-E2B9459D7F30"
+          },
+          {
+            "id": "2f2b9044-c0cc-48c6-bc53-017c570113b9",
+            "shape": "table",
+            "position": {
+              "x": 480,
+              "y": 283
+            },
+            "count": 0,
+            "originKey": "E8296D19-2DB1-472D-8D88-CFD7C005A4BD"
+          },
+          {
+            "id": "03cc7547-8483-4c3f-9cf6-3e5d8d1e71ae",
+            "shape": "erdRelation",
+            "source": {
+              "cell": "7e669648-a205-44ba-b916-e10ca2d57ea5",
+              "port": "2A9E224C-0623-4795-9256-6877C7623FE3%in"
+            },
+            "target": {
+              "cell": "5b16a7fd-27d1-431f-aa91-971e619ea38a",
+              "port": "668A2A39-9144-4779-A21F-C3030E8749A0%in"
+            },
+            "relation": "1:n",
+            "fillColor": "#ACDAFC",
+            "router": {
+              "name": "manhattan"
+            }
+          },
+          {
+            "id": "486e2573-aeb2-4935-9e32-6681016e8b7b",
+            "shape": "table",
+            "position": {
+              "x": -430,
+              "y": 59
+            },
+            "count": 0,
+            "originKey": "5A76ECF5-7D10-4784-A17B-F61A602723D3"
+          },
+          {
+            "id": "5b16a7fd-27d1-431f-aa91-971e619ea38a",
+            "shape": "table",
+            "position": {
+              "x": 44.5,
+              "y": 373
+            },
+            "count": 0,
+            "originKey": "0D4A3190-B38A-4780-A494-82C03D429033"
+          },
+          {
+            "id": "7e669648-a205-44ba-b916-e10ca2d57ea5",
+            "shape": "table",
+            "position": {
+              "x": 25,
+              "y": 36
+            },
+            "count": 0,
+            "originKey": "78B2E81E-A726-4916-BA7C-4052543032AA"
+          }
+        ]
+      },
+      "id": "20615967-3577-447A-BD8C-C07042F034BB"
+    }
+  ],
+  "standardFields": []
+}
