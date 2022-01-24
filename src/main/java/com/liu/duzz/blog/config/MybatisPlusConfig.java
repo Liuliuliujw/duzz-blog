@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * Mybatis plus字段填充
  *
- * @author: llliujw
+ * @author llliujw
  */
 @Configuration
 public class MybatisPlusConfig {
