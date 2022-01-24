@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import lombok.Data;
 
 /**
- * 
+ * 实体类
  *
  * @author llliujw
  */

@@ -7,7 +7,7 @@ import java.io.Serializable;
 import lombok.Data;
 
 /**
- * 
+ * 实体类
  *
  * @author llliujw
  */
