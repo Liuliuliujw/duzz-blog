@@ -7,6 +7,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+
+import com.liu.duzz.blog.enums.ArticleState;
 import lombok.Data;
 
 /**
@@ -69,7 +71,7 @@ public class ArticleInfoEntity implements Serializable {
     /**
      * 文章状态
      */
-    private Integer status;
+    private ArticleState status;
 
     /**
      * 创建时间
