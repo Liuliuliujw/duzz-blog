@@ -2,7 +2,7 @@ package com.liu.duzz.blog.controller;
 
 import com.liu.duzz.blog.entity.UserEntity;
 import com.liu.duzz.blog.mapper.UserMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,14 +12,14 @@ import java.time.LocalDateTime;
 /**
  * 测试用
  *
- * @author: llliujw
+ * @author llliujw
  */
 @RestController
 @RequestMapping("/test")
+@RequiredArgsConstructor
 public class TestController {
 
-    @Autowired
-    UserMapper userMapper;
+    private final UserMapper userMapper;
 
     @GetMapping("/mapper")
     public UserEntity testMapper(){
