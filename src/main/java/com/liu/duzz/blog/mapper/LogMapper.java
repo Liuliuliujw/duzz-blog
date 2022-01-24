@@ -1,7 +1,7 @@
 package com.liu.duzz.blog.mapper;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.liu.duzz.blog.entity.LogEntity;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -10,5 +10,9 @@ import org.apache.ibatis.annotations.Mapper;
  * @author llliujw
  */
 @Mapper
-public interface LogMapper extends BaseMapper<LogEntity> {
+public interface LogMapper {
+
+    int insert(LogEntity logEntity);
+
+    <P extends IPage<LogEntity>> P selectPage(P page);
 }

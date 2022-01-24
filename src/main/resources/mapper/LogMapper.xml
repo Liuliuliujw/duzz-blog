@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.liu.duzz.blog.mapper.LogMapper">
+    <resultMap id="EntityMap" type="com.liu.duzz.blog.entity.LogEntity">
+        <result column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="action" property="action" jdbcType="VARCHAR"/>
+        <result column="description" property="description" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    
+    <insert id="insert" parameterType="com.liu.duzz.blog.entity.LogEntity">
+        INSERT INTO log
+        (user_id,action,description,create_time)
+        VALUES
+        (#{userId,jdbcType=INTEGER}, #{action,jdbcType=VARCHAR},
+         #{description,jdbcType=VARCHAR}, #{createTime, jdbcType=TIMESTAMP})
+    </insert>
+    
+    <select id="selectPage" resultMap="EntityMap">
+        SELECT user_id,action,description,create_time
+        FROM log
+    </select>
 
 </mapper>
