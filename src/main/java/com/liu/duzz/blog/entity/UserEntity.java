@@ -7,6 +7,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+
+import com.liu.duzz.blog.enums.UserRole;
 import lombok.Data;
 
 /**
@@ -59,7 +61,7 @@ public class UserEntity implements Serializable {
     /**
      * 角色
      */
-    private Integer role;
+    private UserRole role;
 
     /**
      * 注册时间
