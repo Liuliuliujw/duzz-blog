@@ -7,18 +7,21 @@ import com.liu.duzz.blog.enums.UserRole;
 import com.liu.duzz.blog.mapper.LogMapper;
 import com.liu.duzz.blog.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
 
 /**
  * 测试用
  *
  * @author llliujw
  */
-@RestController
+@Controller
 @RequestMapping("/test")
 @RequiredArgsConstructor
 public class TestController {
@@ -27,7 +30,19 @@ public class TestController {
 
     private final LogMapper logMapper;
 
+    @GetMapping
+    public String test(Model model){
+        UserEntity user1 = new UserEntity();
+        user1.setName("zhangSan");
+        UserEntity user2 = new UserEntity();
+        user2.setName("liSi");
+        model.addAttribute("msg","helloWorld");
+        model.addAttribute("users", Arrays.asList(user1,user2));
+        return "test";
+    }
+
     @GetMapping("/mapper")
+    @ResponseBody
     public UserEntity testMapper(){
         UserEntity user = new UserEntity();
         user.setName("zhangSan");
@@ -40,6 +55,7 @@ public class TestController {
     }
 
     @GetMapping("/log")
+    @ResponseBody
     public Page<LogEntity> testLogMapper(){
         LogEntity log = new LogEntity();
         log.setUserId(7);
@@ -50,6 +66,5 @@ public class TestController {
         Page<LogEntity> page = new Page<>(1,3);
         return logMapper.selectPage(page);
     }
-
 
 }

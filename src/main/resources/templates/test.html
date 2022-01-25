@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!--/*@thymesVar id="optionMap" type="java.util.Map"*/-->
+    <title th:text="${optionMap.get('siteTitle')}"></title>
+</head>
+<body>
+<div th:utext="${msg}"></div>
+<hr>
+<h3 th:each="user:${users}" th:text="${user.name}"></h3>
+</body>
+</html>
