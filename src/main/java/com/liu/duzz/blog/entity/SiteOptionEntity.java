@@ -12,15 +12,20 @@ import lombok.Data;
  * @author llliujw
  */
 @Data
-@TableName("options")
-public class OptionsEntity implements Serializable {
+@TableName("site_option")
+public class SiteOptionEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
+     * 配置项ID
+     */
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
+
+    /**
      * 配置项名称
      */
-    @TableId(value = "name", type = IdType.AUTO)
     private String name;
 
     /**
