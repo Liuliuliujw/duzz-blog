@@ -29,7 +29,7 @@ public class CommonInterceptor implements HandlerInterceptor {
     public  void postHandle(HttpServletRequest request, HttpServletResponse response,
                             Object handler, @Nullable ModelAndView modelAndView) {
         if (Objects.isNull(optionMap))optionMap = optionService.map();
-        request.setAttribute("optionMap",optionMap);
+        optionMap.forEach(request::setAttribute);
     }
 
     public static void refreshOptions(){
