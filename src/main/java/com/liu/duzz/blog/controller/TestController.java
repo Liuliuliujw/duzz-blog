@@ -67,4 +67,15 @@ public class TestController {
         return logMapper.selectPage(page);
     }
 
+    @GetMapping("/2")
+    @ResponseBody
+    public String test2(){
+        return "OK";
+    }
+
+    @GetMapping("/error")
+    public void testError() throws Exception {
+        throw new Exception("测试异常");
+    }
+
 }

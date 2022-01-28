@@ -2,7 +2,7 @@ package com.liu.duzz.blog.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.liu.duzz.blog.entity.SiteOptionEntity;
-import com.liu.duzz.blog.interceptor.CommonInterceptor;
+import com.liu.duzz.blog.common.OptionProvider;
 import com.liu.duzz.blog.mapper.SiteOptionMapper;
 import com.liu.duzz.blog.service.ISiteOptionService;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +26,7 @@ public class SiteOptionServiceImpl implements ISiteOptionService {
     @Override
     public boolean save(SiteOptionEntity entity) {
         if (optionMapper.insert(entity) == 1) {
-            CommonInterceptor.refreshOptions();
+            OptionProvider.refreshOptions();
             return true;
         }
         return false;
@@ -46,7 +46,7 @@ public class SiteOptionServiceImpl implements ISiteOptionService {
     @Override
     public boolean update(SiteOptionEntity entity) {
         if (optionMapper.updateById(entity) == 1) {
-            CommonInterceptor.refreshOptions();
+            OptionProvider.refreshOptions();
             return true;
         }
         return false;
@@ -55,7 +55,7 @@ public class SiteOptionServiceImpl implements ISiteOptionService {
     @Override
     public boolean removeById(Integer id) {
         if (optionMapper.deleteById(id) == 1) {
-            CommonInterceptor.refreshOptions();
+            OptionProvider.refreshOptions();
             return true;
         }
         return false;
