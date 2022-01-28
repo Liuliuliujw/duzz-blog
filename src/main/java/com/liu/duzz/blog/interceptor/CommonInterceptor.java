@@ -25,6 +25,9 @@ public class CommonInterceptor implements HandlerInterceptor {
 
     private static Map<String, String> optionMap;
 
+    /**
+     * 在Controller方法调用后，向响应数据中添加通用数据
+     */
     @Override
     public  void postHandle(HttpServletRequest request, HttpServletResponse response,
                             Object handler, @Nullable ModelAndView modelAndView) {

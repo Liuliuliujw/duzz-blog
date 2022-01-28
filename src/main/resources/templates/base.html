@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="meta">
+    <!-- 网页使用的字符编码集 -->
+    <meta charset="UTF-8">
+    <!-- 网页的搜索关键词 -->
+    <!--/*@thymesVar id="siteKeywords" type="java.lang.String"*/-->
+    <meta name="keywords" th:content="${siteKeywords}">
+    <!-- 兼容移动端 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <!-- 网页标题 -->
+    <!--/*@thymesVar id="siteTitle" type="java.lang.String"*/-->
+    <title th:text="${siteTitle}"></title>
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" th:href="@{/static/favicon.ico}"/>
+    <!-- JQuery_3-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <!-- BootStrap_4-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+    <!-- 使IE9以下的浏览器兼容HTML5 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <!-- 使IE9以下的浏览器兼容CSS3 -->
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+<header th:fragment="header">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" th:href="@{/}">
+            <img th:src="@{/static/favicon.ico}" width="30" height="30" class="d-inline-block align-top" alt=""/>
+            <!--/*@thymesVar id="siteTitle" type="java.lang.String"*/-->
+            <span th:text="${siteTitle}"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-expanded="false">归档</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" th:href="@{/article/create-time}">按时间</a>
+                        <a class="dropdown-item" th:href="@{/article/view-count}">按浏览量</a>
+                        <a class="dropdown-item" th:href="@{/article/comment-count}">按评论数</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/link}">友链</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/about}">关于</a>
+                </li>
+            </ul>
+        </div>
+        <th:block th:with="user=${session.get('user')}">
+            <!--/*@thymesVar id="user" type="com.liu.duzz.blog.vo.UserVo"*/-->
+            <th:block th:if="${user} eq null">
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="btn btn-info" th:href="@{/login}">登录</a>
+                </div>
+            </th:block>
+            <th:block th:if="${user} ne null">
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLink">
+                        <img class="rounded-circle" th:src="@{${user.avatar}}" width="38px" height="38px"/>
+                        <span class="text-muted" th:text="${user.nickname}"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <th:block th:if="${user.role.code} lt 5">
+                            <a class="dropdown-item" href="#">管理员界面</a>
+                        </th:block>
+                        <a class="dropdown-item" href="#">创作</a>
+                        <a class="dropdown-item" th:href="@{/logout}">注销</a>
+                    </div>
+                </div>
+            </th:block>
+        </th:block>
+    </nav>
+</header>
+
+<footer th:fragment="footer" class="footer">
+    <style>
+        footer .col-12 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <div class="container-fluid">
+        <div class="row text-muted bg-dark">
+            <div class="col-12 text-center">
+                <!--/*@thymesVar id="siteTitle" type="java.lang.String"*/-->
+                <p th:text="'Copyright©2021'+${siteTitle}+'|'">
+                    <!--/*@thymesVar id="siteIcpNum" type="java.lang.String"*/-->
+                    <a th:text="${siteIcpNum?:'暂无'}" href="https://beian.miit.gov.cn/"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
