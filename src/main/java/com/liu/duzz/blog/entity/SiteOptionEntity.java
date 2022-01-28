@@ -4,14 +4,16 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * 实体类
  *
  * @author llliujw
  */
-@Data
+@Getter
+@Setter
 @TableName("site_option")
 public class SiteOptionEntity implements Serializable {
 

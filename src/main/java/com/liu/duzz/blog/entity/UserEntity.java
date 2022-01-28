@@ -9,14 +9,16 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import com.liu.duzz.blog.enums.UserRole;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * 实体类
  *
  * @author llliujw
  */
-@Data
+@Getter
+@Setter
 @TableName("user")
 public class UserEntity implements Serializable {
 

@@ -5,14 +5,16 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * 实体类
  *
  * @author llliujw
  */
-@Data
+@Getter
+@Setter
 @TableName("log")
 public class LogEntity implements Serializable {
 

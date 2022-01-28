@@ -1,14 +1,16 @@
 package com.liu.duzz.blog.vo;
 
 import com.liu.duzz.blog.enums.UserRole;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * VO
  *
  * @author llliujw
  */
-@Data
+@Getter
+@Setter
 public class UserVo {
 
     /**
